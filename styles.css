@@ -1,0 +1,77 @@
+/* --- Animated Gradient Background --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #6a11cb, #2575fc, #ff9a9e);
+    background-size: 600% 600%;
+    animation: gradientAnimation 20s ease infinite;
+    color: white;
+    text-align: center;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* --- Navigation Bar --- */
+nav {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Headings --- */
+h1, h2 {
+    margin-top: 20px;
+}
+/* ---- Image & Video Size for Index Page ---- */
+.section-box img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-box video {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* --- Grid Layout for Actors & Movies Pages --- */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* --- Boxes around each image & label --- */
+.card img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* --- Video Size Control --- */
+.card video {
+	max-width: 300px;
+	height: auto;
+	border-radius: 10px;
+}
